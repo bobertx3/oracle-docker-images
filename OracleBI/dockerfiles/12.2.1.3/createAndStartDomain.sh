@@ -200,10 +200,13 @@ if [ ! -f $domainCheckFile ]; then
   rm -f $responseFile
   trap - INT TERM
 
+  echo "\"JAVA_OPTIONS=\"${JAVA_OPTIONS} -Doracle.jdbc.fanEnabled=false" > ${DOMAIN_HOME}/bin/setUserOverrides.sh
+
   echo "Do not delete this file - it tells the container createAndStartDomain.sh script that the domain is ready to be started" > $domainCheckFile
 else
   # Commenting out startup to test a few things
   # ${DOMAIN_HOME}/bitools/bin/start.sh
+  echo "Not starting"
 fi
 
 trap '${DOMAIN_HOME}/bitools/bin/stop.sh; kill -TERM $PID' INT TERM
