@@ -202,7 +202,8 @@ if [ ! -f $domainCheckFile ]; then
 
   echo "Do not delete this file - it tells the container createAndStartDomain.sh script that the domain is ready to be started" > $domainCheckFile
 else
-  ${DOMAIN_HOME}/bitools/bin/start.sh
+  # Commenting out startup to test a few things
+  # ${DOMAIN_HOME}/bitools/bin/start.sh
 fi
 
 trap '${DOMAIN_HOME}/bitools/bin/stop.sh; kill -TERM $PID' INT TERM
