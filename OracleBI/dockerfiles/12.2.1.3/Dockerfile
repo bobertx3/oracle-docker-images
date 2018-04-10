@@ -20,7 +20,7 @@
 #
 # Pull base image
 # ---------------
-FROM oracle/fmw-infrastructure:12.2.1.3
+FROM redpillanalytics/fmw-infrastructure:12.2.1.3
 
 # Maintainer
 # ----------

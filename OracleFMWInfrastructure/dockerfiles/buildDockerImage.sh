@@ -63,7 +63,7 @@ done
 
 # FMW Infrastructure Image Name
 echo "Version: " $VERSION
-IMAGE_NAME="oracle/fmw-infrastructure:$VERSION"
+IMAGE_NAME="redpillanalytics/fmw-infrastructure:$VERSION"
 echo "Image name: " $IMAGE_NAME
 
 

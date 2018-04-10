@@ -73,7 +73,7 @@ while getopts "qhcsv:" optname; do
 done
 
 # Image Name
-IMAGE_NAME="oracle/biplatform:$VERSION"
+IMAGE_NAME="redpillanalytics/biplatform:$VERSION"
 
 # Go into version folder
 cd $VERSION

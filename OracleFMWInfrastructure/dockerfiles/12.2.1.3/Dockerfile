@@ -18,7 +18,7 @@
 #
 # From 
 # -------------------------
-FROM oracle/serverjre:8
+FROM redpillanalytics/serverjre:8
 
 # Maintainer
 # ----------
